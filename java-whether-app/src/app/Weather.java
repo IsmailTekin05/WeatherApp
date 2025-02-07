@@ -1,30 +1,6 @@
 package app;
 
-import java.awt.*;
-
 public enum Weather {
-    /*
-    Sunny: Clear sky with a bright sun.
-    Cloudy: Overcast sky with full cloud cover.
-    Partly Cloudy: Sun and clouds present (multiple variations in the image suggest different degrees of partly cloudy).
-    Mostly Sunny: Predominantly sunny with a few clouds.
-    Sunny with Light Clouds: Sun with wispy, scattered clouds.
-    Cloudy with Sunny Intervals: Mostly cloudy with occasional glimpses of the sun.
-    Light Rain: Cloud with a few raindrops (shown as "1111" in the image, likely representing falling rain).
-    Moderate Rain: Cloud with more intense raindrops (more "1111" lines).
-    Heavy Rain: Cloud with the most intense raindrops (most "1111" lines).
-    Thunderstorm: Cloud with lightning symbols.
-    Sunny and Light Rain: Sun and cloud together with a few raindrops.
-    Sunny and Moderate Rain: Sun and cloud together with more intense raindrops.
-    Sunny and Heavy Rain: Sun and cloud together with the most intense raindrops.
-    Temperature Drop (Cold): Thermometer with a low temperature indicated by a snowflake.
-    Snow: Snowflake symbol.
-    Windy: Cloud with strong wind indicated by motion lines.
-    Sunny and Windy: Sun with wind indicated by motion lines.
-    Foggy: Cloud with a hazy effect (represented by a lighter cloud symbol).
-    Cloudy and Cold: Cloud with a snowflake, indicating cold and overcast conditions.
-    Stormy: Dark cloud with lightning and rain (combining thunderstorm and heavy rain elements).
-    */
     Sunny, Cloudy, PartlyCloudy, MostlySunny, SunnyWithLightClouds,
     CloudyWithSunnyIntervals, LightRain, ModerateRain, HeavyRain, Thunderstorm,
     SunnyAndLightRain, SunnyAndModerateRain, SunnyAndHeavyRain, TemperatureDrop, Snow,
@@ -111,23 +87,23 @@ public enum Weather {
             case Sunny: return 0;
             case Cloudy: return 0;
             case PartlyCloudy: return 0;
-            case MostlySunny: return 1;
-            case SunnyWithLightClouds: return 1;
+            case MostlySunny: return 0;
+            case SunnyWithLightClouds: return 0;
             case CloudyWithSunnyIntervals: return 1;
-            case LightRain: return 2;
-            case ModerateRain: return 2;
-            case HeavyRain: return 2;
-            case Thunderstorm: return 3;
-            case SunnyAndLightRain: return 3;
-            case SunnyAndModerateRain: return 3;
-            case SunnyAndHeavyRain: return 4;
-            case TemperatureDrop: return 4;
-            case Snow: return 4;
-            case Windy: return 5;
-            case SunnyAndWindy: return 5;
-            case Foggy: return 5;
-            case CloudyAndCold: return 6;
-            case Stormy: return 6;
+            case LightRain: return 1;
+            case ModerateRain: return 1;
+            case HeavyRain: return 1;
+            case Thunderstorm: return 1;
+            case SunnyAndLightRain: return 2;
+            case SunnyAndModerateRain: return 2;
+            case SunnyAndHeavyRain: return 2;
+            case TemperatureDrop: return 2;
+            case Snow: return 2;
+            case Windy: return 3;
+            case SunnyAndWindy: return 3;
+            case Foggy: return 3;
+            case CloudyAndCold: return 3;
+            case Stormy: return 3;
             default: return 0;
         }
     }
