@@ -1,4 +1,4 @@
-![logo](https://github.com/user-attachments/assets/a3a12b66-ba09-416b-93bf-c724214f3a74)
+![Adsız tasarım](https://github.com/user-attachments/assets/e3d0c742-7f6f-4f82-9e75-7e20f82a18c4)
 
 !!!WEATHER APP!!!
 
