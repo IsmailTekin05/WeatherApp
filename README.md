@@ -1,4 +1,3 @@
-![Adsız tasarım](https://github.com/user-attachments/assets/e3d0c742-7f6f-4f82-9e75-7e20f82a18c4)
 # Java Weather App
 
 A simple Java-based weather application that fetches real-time weather data and displays it in a user-friendly interface.
